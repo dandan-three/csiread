@@ -4,9 +4,10 @@
 name: Python package
 
 on:
-  push:
-    tags:
-      - v*
+  push: # 监听每次推送事件
+    branches:
+      - '*' # 监听所有分支的推送
+
 jobs:
   build:
 
